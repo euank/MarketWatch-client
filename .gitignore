@@ -11,6 +11,7 @@ spec/reports
 test/tmp
 test/version_tmp
 tmp
+cookie.jar
 
 # YARD artifacts
 .yardoc
