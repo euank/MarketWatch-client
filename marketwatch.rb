@@ -35,8 +35,7 @@ class MarketWatch
     html = @c.get_content(url)
     page = Nokogiri::HTML(html)
     ranking_section = page.css('.rankings').first
-    puts ranking_section
-    ranks = ranking_section.css('.tbody > tr > td.rank')
+    ranks = ranking_section.css('tbody > tr > td.rank')
     rankings = []
     ranks.each do |rank|
       rankings << {
