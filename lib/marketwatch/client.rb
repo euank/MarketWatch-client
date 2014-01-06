@@ -30,7 +30,7 @@ module Marketwatch
       end
 
       resp = @c.get(jsresp["url"])
-      resp.status == 200
+      resp.status == 200 || resp.status == 302
     end
 
     def get_rankings(gamename)
