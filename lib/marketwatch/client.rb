@@ -43,7 +43,8 @@ module Marketwatch
       ranks.each do |rank|
         rankings << {
           rank: rank.text.strip,
-          name: rank.parent.css('.name').first.text.strip
+          name: rank.parent.css('.name').first.text.strip,
+          money: rank.parent.css("td:nth-child(3)").text.strip
         }
       end
       rankings

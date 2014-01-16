@@ -2,6 +2,8 @@ PATH
   remote: .
   specs:
     marketwatch-client (0.0.1)
+      httpclient
+      nokogiri
 
 GEM
   remote: https://rubygems.org/
@@ -17,7 +19,5 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 1.3)
-  httpclient
   marketwatch-client!
-  nokogiri
   rake
